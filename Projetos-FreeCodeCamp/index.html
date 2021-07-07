@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <h1 id="title"> Pesquisa de satisfação </h1>
+    <p id="description"> Obrigado por nos ajudar a melhorar a nossa escola de idiomas </p>
+    <form id="survey-form">
+        <label for="name" id="name-label"> Nome </label>
+        <input type="text" id="name" name="name" placeholder="Coloque seu nome" autofocus autocomplete="on" required>
+        <label for="email" id="email-label"> Email </label>
+        <input type="email" id="email" name="email" placeholder="Coloque seu email" autocomplete="on" required>
+        <label for="number" id="number-label"> Idade </label>
+        <input type="number" id="number" name="number" min="0" max="130" placeholder="Coloque sua idade">
+        <label for="dropdown" id="dropdown">Escolha o melhor professor da escola</label>
+        <select id="dropdown">
+            <option label="Jorge"></option>
+            <option label="Paul"></option>
+            <option label="Ringo"></option>
+            
+        </select>
+        <p>Escolha o melhor horário para as aulas</p>
+        <div>
+            <label for="manha">Manhã</label>
+            <input type="checkbox" id="manha" name="manha" value="1" checked>
+        </div>
+        <div>
+            <label for="noite">Noite</label>
+            <input type="checkbox" id="noite" name="noite" value="2">
+        </div>
+
+        <label id="rd">
+  <input type="radio" name="rd" value="Definitely">Definitely<br>
+  <input type="radio" name="rd" value="Not sure">Not sure<br>
+  <input type="radio" name="rd" value="Maybe">Maybe<br>
+</label>
+
+        <label for="info-extra">Comentários adicionais!</label>
+        <textarea id="info-extra" name="info-extra"> </textarea>
+        <button type="submit" id="submit">Enviar ;)</button>
+</body>
+
+</html>
