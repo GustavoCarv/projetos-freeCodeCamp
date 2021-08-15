@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; 
+    flex-direction: column;
+}
+
+#navbar{
+    background-color :rgba(243, 26, 26, 0.788);
+    width: 99vw;
+    color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+
+}
+
+#navbar>a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-size: 2em;
+}
+
+#welcome-section {
+    background-color: rgba(12, 12, 12, 0.87);
+    color: white;
+    width: 99vw;
+    height: 70vh;
+    margin: auto;
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#subtitle{ 
+    font-size: 2rem;
+    color: rgba(243, 26, 26, 0.507);
+}
+
+.project-card>img {
+    height: 400px;
+    width: 250px;
+}
+
+#projects {
+    width: 100vw;
+    height: 70vh;
+    background-color: rgba(177, 237, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+#projects>a>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    
+}
+#projects>a{
+ text-decoration: none;
+}
+
+#labeninjas{
+    color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media  (max-width: 1024px) {
+    #projects, #welcome-section { 
+        min-height: 700px;
+    }
+}
